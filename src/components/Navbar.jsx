@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <SolarPanel className="h-8 w-8 mr-2" />
+            <SolarPanel className="h-8 w-8 mr-2" /> 
             <span className="font-bold text-xl">SolarOptimize</span>
           </div>
           <nav className="flex space-x-4">
@@ -22,7 +22,7 @@ export default function Navbar() {
             </Link>
           </nav>
         </div>
-      </div>
+      </div>  
     </header>
   )
 }
