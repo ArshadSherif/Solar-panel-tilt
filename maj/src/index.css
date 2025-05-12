@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @layer base {
@@ -67,7 +71,7 @@
 }
 
 @layer base {
-/* 
+  /* 
   body {
     @apply bg-background text-foreground;
   } */

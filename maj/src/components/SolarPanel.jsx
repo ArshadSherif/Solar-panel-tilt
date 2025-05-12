@@ -28,7 +28,7 @@ export default function SolarPanel({ tiltAngle }) {
       );
     }
   });
-  
+
   return (
     <>
       {/* Group containing both the panel and frame */}

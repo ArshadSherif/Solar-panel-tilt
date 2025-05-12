@@ -12,7 +12,6 @@ export default function PanelConfiguration() {
 
   const [time, setTime] = useState("");
 
-
   const fetchTiltAngle = async () => {
     if (!latitude || !longitude) {
       alert("Please enter both latitude and longitude");
@@ -26,9 +25,9 @@ export default function PanelConfiguration() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ 
-          latitude: parseFloat(latitude), 
-          longitude: parseFloat(longitude)
+        body: JSON.stringify({
+          latitude: parseFloat(latitude),
+          longitude: parseFloat(longitude),
         }),
       });
 
@@ -42,7 +41,7 @@ export default function PanelConfiguration() {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4 flex flex-col align-center justify-center h-full">
       <h2 className="text-xl font-medium mb-4">Solar System Configuration</h2>
 
       <div className="space-y-6 mb-6">
@@ -70,7 +69,6 @@ export default function PanelConfiguration() {
           />
         </div>
 
-
         {/* Time Input */}
         <div className="space-y-2">
           <Label htmlFor="time">Time (hrs)</Label>
@@ -81,8 +79,6 @@ export default function PanelConfiguration() {
             onChange={(e) => setTime(e.target.value)}
           />
         </div>
-
-
 
         {/* Apply Button */}
         <Button

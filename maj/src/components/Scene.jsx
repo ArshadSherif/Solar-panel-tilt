@@ -5,11 +5,14 @@ import SolarPanel from "./SolarPanel";
 import { useTilt } from "@/context/TiltContext";
 
 export default function Scene() {
-    const { tilt, setTilt } = useTilt();
+  const { tilt, setTilt } = useTilt();
 
   return (
     <>
-      <Canvas camera={{ position: [5, 3, 5] , fov:40}}>
+      <Canvas
+        camera={{ position: [5, 3, 5], fov: 40 }}
+        style={{ width: "3000px", height: "800px" }}
+      >
         {/* Lights */}
         <ambientLight intensity={0.5} />
         <directionalLight position={[5, 5, 5]} intensity={1} />
